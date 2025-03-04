@@ -12,6 +12,6 @@ public class EmailNotificationService : INotificationService
     public bool SupportsChannel(NotificationChannel channel) => channel == NotificationChannel.Email;
     public void SendNotification(string message)
     {
-        Console.WriteLine("Email has been sent"); ;
+        Console.WriteLine("Email has been sent " + message); ;
     }
 }

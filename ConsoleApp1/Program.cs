@@ -14,4 +14,4 @@ var notificationServices = serviceProvider.GetServices<INotificationService>();
 var selectedService = notificationServices.FirstOrDefault(service => service is EmailNotificationService);
 
 // Use the selected service
-selectedService.SendNotification("Hello from SMS!");
+selectedService.SendNotification("Hello from Email!");

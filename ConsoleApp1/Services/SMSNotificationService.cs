@@ -11,7 +11,7 @@ public class SMSNotificationService : INotificationService
 {
     public void SendNotification(string message)
     {
-        Console.WriteLine("SMS has been sent");
+        Console.WriteLine("SMS has been sent " + message);
     }
     public bool SupportsChannel(NotificationChannel channel) => channel == NotificationChannel.SMS;
 }
